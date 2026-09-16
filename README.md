@@ -1,7 +1,12 @@
 # Bus Puerto Real
 
+[![Deploy to GitHub Pages](https://github.com/Redomir/bus-puerto-real/actions/workflows/deploy.yml/badge.svg)](https://github.com/Redomir/bus-puerto-real/actions/workflows/deploy.yml)
+[![License: MIT](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
+
 Wrapper moderno y mobile-first del horario de la línea **M-030** (línea 6 del
 CMTBC): Cádiz - Río San Pedro - Campus Universitario - Puerto Real - Hospital.
+
+**Sitio en vivo:** https://redomir.github.io/bus-puerto-real/
 
 Fuente de datos original:
 https://siu.cmtbc.es/es/horarios_lineas_tabla.php?linea=6
@@ -31,3 +36,17 @@ npm run dev
 npm run build   # build de producción en dist/
 npm run lint    # oxlint
 ```
+
+Cada push a `master` despliega automáticamente en GitHub Pages vía
+[`.github/workflows/deploy.yml`](.github/workflows/deploy.yml).
+
+## Contribuir
+
+Los PRs e issues son bienvenidos, sobre todo para mantener
+[`src/data/line6.ts`](src/data/line6.ts) al día cuando el CMTBC cambie el
+horario. Consulta [CONTRIBUTING.md](CONTRIBUTING.md).
+
+## Licencia
+
+[MIT](LICENSE) — proyecto no oficial, sin relación con el CMTBC. Los datos de
+horarios pertenecen a su fuente original.
